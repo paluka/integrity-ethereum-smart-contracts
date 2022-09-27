@@ -1,11 +1,12 @@
 # Integrity System - Ethereum Smart Contracts
 
-Ethereum smart contracts that upload documents or files to the blockchain and verify their integrity.
+Upgradable Ethereum smart contracts that upload document or file representations to the blockchain and verifies their integrity.
 
 ## Technology
 
 - Truffle
 - Solidity
+- OpenZeppelin
 
 Erik Paluka. 2022
 

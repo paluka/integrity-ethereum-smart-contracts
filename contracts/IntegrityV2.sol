@@ -2,7 +2,7 @@ pragma solidity >=0.4.22 <0.9.0;
 
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 
-contract Integrity is Initializable {
+contract IntegrityV2 is Initializable {
   address public owner;
   mapping (address => string) private data;
 
@@ -23,5 +23,9 @@ contract Integrity is Initializable {
 
   function verify(address dataOwner, string calldata _text) restricted view external returns(bool) {
     return keccak256(bytes(data[dataOwner])) == keccak256(bytes(_text));
+  }
+
+  function random(address dataOwner, string calldata _text) view external returns(bool) {
+    return true;
   }
 }

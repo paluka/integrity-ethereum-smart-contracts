@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "clean": "rimraf ./build .openzeppelin"
+  },
+  "devDependencies": {
+    "@openzeppelin/truffle-upgrades": "^1.16.0",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts-upgradeable": "^4.8.0-rc.1"
+  }
+}
