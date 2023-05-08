@@ -1,0 +1,21 @@
+{
+  "name": "integrity-ethereum-smart-contracts",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "truffle migrate",
+    "test": "truffle test",
+    "migrate": "truffle migrate",
+    "deploy": "truffle deploy",
+    "clean": "rimraf .openzeppelin/* build/*"
+  },
+  "devDependencies": {
+    "@openzeppelin/truffle-upgrades": "^1.18.0",
+    "rimraf": "^5.0.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts-upgradeable": "^4.8.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}

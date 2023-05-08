@@ -1,0 +1,73 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x9719637f8bCD7E7F0c930A0318C6437bC84e09b9",
+    "txHash": "0xf264a3ccb4772bc908c100e4141c4d52afa0e764c78ead1d3347ff9eddfa6218"
+  },
+  "proxies": [
+    {
+      "address": "0x87a7e5dD7057b7b4455CEb5F0522D25601127094",
+      "txHash": "0xb03399504678b7ba23b47db15bf2b110b53000aaeafa49d136e59e9f63c732fc",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "3c9c52ef4dd4ba6fd6d1964464a1f6cbefa4b0eab971d0828536b32b7d1e9266": {
+      "address": "0xeF63DB03511b0F492E2B8eA7CF7EA4db5D7D43c1",
+      "txHash": "0x142cd77fa104a6a06b8b22253df5cb66f8b7e67c65a1def54e8b1cf8b95e7a14",
+      "layout": {
+        "solcVersion": "0.8.13",
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_uint8",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "contract": "Integrity",
+            "label": "owner",
+            "type": "t_address",
+            "src": "../project:/contracts/Integrity.sol:7"
+          },
+          {
+            "contract": "Integrity",
+            "label": "data",
+            "type": "t_mapping(t_string_memory_ptr,t_array(t_array(t_string_storage)dyn_storage)dyn_storage)",
+            "src": "../project:/contracts/Integrity.sol:8"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_string_memory_ptr,t_array(t_array(t_string_storage)dyn_storage)dyn_storage)": {
+            "label": "mapping(string => string[][])"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_array(t_array(t_string_storage)dyn_storage)dyn_storage": {
+            "label": "string[][]"
+          },
+          "t_array(t_string_storage)dyn_storage": {
+            "label": "string[]"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    }
+  }
+}
